@@ -1,0 +1,24 @@
+ul {
+  border-radius: 10px;
+  margin: 0;
+  padding: 5px;
+  width: auto;
+  box-shadow: 2px 2px 6px black;
+  transition: height 0.3s ease-in-out;
+  list-style-type: none;
+  max-height: 300px;
+  overflow: auto;
+}
+
+li {
+  padding-bottom: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.selected {
+  background-color: #7ad5e973;
+  border-radius: 5px;
+  border: 0.5px solid #abb3b7;
+}
