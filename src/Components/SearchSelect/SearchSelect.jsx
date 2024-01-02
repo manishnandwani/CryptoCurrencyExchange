@@ -1,8 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import styles from "./MultiSelect.module.css";
+import styles from "./SearchSelect.module.css";
 import ListMenu from "../ListMenu/ListMenu";
-// import SelectedList from "../SelectedList/SelectedList";
-// import { getSelectedItems } from "../../utils/selectFunctions";
 
 const MultiSelect = ({ list, updateExchangeValues, type}) => {
   const [openDropDown, setOpenDropDown] = useState(false);
@@ -49,7 +47,7 @@ const MultiSelect = ({ list, updateExchangeValues, type}) => {
       setOptions(list);
     } else {
       const _options = list.filter((data) => {
-        if (data.name.toLowerCase().includes(searchValue)) {
+        if (data.name.toLowerCase().includes(searchValue) || data.symbol.toLowerCase().includes(searchValue)) {
           return data;
         }
       });

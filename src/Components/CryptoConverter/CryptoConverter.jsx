@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import MultiSelect from "../MultiSelect/MultiSelect";
+import MultiSelect from "../SearchSelect/SearchSelect";
 import styles from "./CryptoConverter.module.css";
 import arrow from "../../assets/arrows.svg";
 
