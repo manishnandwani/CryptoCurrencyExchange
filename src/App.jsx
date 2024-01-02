@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react'
 import './App.css'
 import CryptoConverter from './Components/CryptoConverter/CryptoConverter';
 
