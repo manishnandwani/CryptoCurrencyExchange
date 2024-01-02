@@ -34,7 +34,6 @@ const MultiSelect = ({ list, updateExchangeValues, type}) => {
   };
 
   const handleSelectItem = (value) => {
-    console.log("value",inputRef.current)
     setSelectedItem(value)
     inputRef.current.value = ''
     setSearching(false)
